@@ -2,7 +2,7 @@ import g4f
 
 
 def summarizeNews(title, cookies):
-  print(cookies)
+  print('Start Summarizing News...')
   searchQuery = "rangkum berita dalam beberapa poin mengenai '" + title + "' ?"
   response = g4f.ChatCompletion.create(
       model=g4f.models.gpt_4,

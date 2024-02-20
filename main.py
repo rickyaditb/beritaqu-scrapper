@@ -45,7 +45,7 @@ def generateNews():
       continue
     if checkExistingNews(item['title']):
       continue
-
+    
     title = item['title']
     link = item['link']
     publish_date = item['isoDate']
@@ -73,5 +73,6 @@ def generateNews():
     time.sleep(300)  # Add one minute delay
 
 # cara pakai fungsinya
+
 for status in generateNews():
   print(status)

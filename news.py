@@ -25,8 +25,10 @@ def getRawNews(target):
 
 def getNewsFromAllSources():
   i = 0
+  print('Getting News from all sources...')
   while True:
     for source in sources:
+      print('Getting News from ' + source + " : " + str(i))
       news = getRawNews(source)
       if i < len(news):
         news[i]['source'] = source
