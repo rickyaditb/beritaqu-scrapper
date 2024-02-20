@@ -1,7 +1,7 @@
 import time
 
 from news import getRawNews, getNewsFromAllSources
-from database import insertNews, checkExistingNews
+from database import insertNews, checkExistingNews, checkSources
 from bing import summarizeNews
 from sentiment.main import checkSentiment
 from category import categorize
@@ -41,6 +41,8 @@ def generateNews():
   for item in getNewsFromAllSources():
     global counter
     # if current title exist, skip this iteration
+    if checkSources(item['source']):
+      continue
     if checkExistingNews(item['title']):
       continue
 

@@ -35,3 +35,11 @@ def checkExistingNews(title):
   cur.execute(query, (title,))
   result = cur.fetchone()[0]
   return result
+
+def checkSources(source):
+  cur = conn.cursor()
+  query = "SELECT * FROM news ORDER BY id DESC LIMIT 8"
+  cur.execute(query)
+  result = cur.fetchall()
+  exists = any(source in row for row in result)
+  return exists

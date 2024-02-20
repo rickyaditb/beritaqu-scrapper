@@ -12,6 +12,8 @@ sources = {
   'VOA': 'https://berita-indo-api-next.vercel.app/api/voa-news',
 }
 
+sourceArray = list(sources.keys())
+
 def getRawNews(target):
   response = requests.get(sources[target])
 
