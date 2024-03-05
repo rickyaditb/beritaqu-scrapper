@@ -1,5 +1,5 @@
 def categorize(string):
-  string = string.lower()  # Convert the string to lowercase
+  string = string.lower()
 
   category_words = {
     'Politik': ['coblos', 'megawati', 'demokrasi', 'pemilu', 'kandidat', 'partai politik', 'calon presiden', 'debat', 'kampanye', 'suara rakyat', 'koalisi', 'kontestasi', 'undang-undang', 'parlemen', 'ketua partai', 'kabinet', 'oposisi', 'korupsi', 'reformasi', 'pemungutan suara', 'kampanye hitam', 'pemilih', 'pemimpin', 'ketidaksetujuan', 'kebijakan', 'pengawasan', 'partai', 'dpr', 'anies', 'ganjar', 'prabowo', 'gibran', 'jokowi', 'pdip', 'gerindra', 'pks', 'imin', 'mahfud', 'ppp', 'psi'],

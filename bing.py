@@ -1,6 +1,5 @@
 import g4f
 
-
 def summarizeNews(title, cookies):
   print('Start Summarizing News...')
   searchQuery = "rangkum berita dalam beberapa poin mengenai '" + title + "' ?"
